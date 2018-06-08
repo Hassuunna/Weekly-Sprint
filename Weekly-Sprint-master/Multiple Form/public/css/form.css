@@ -1,0 +1,62 @@
+body {
+    /*color: #8e6218;*/
+    background: #455A64;
+}
+
+
+/* to remove arrows from number input fields */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+h4 {
+    text-align: center;
+}
+
+.plus {
+    margin: auto;
+}
+
+button {
+    width: 40%;
+    margin: 2% 4%;
+    font-size: 20px !important;
+}
+
+.rows {
+    padding: 2em;
+}
+
+.form-control,
+.custom-file-label,
+.custom-file-label::after {
+    outline: none;
+    border: 0 !important;
+    border-radius: 0 !important;
+}
+
+.first {
+    border-radius: 10px 10px 0 0 !important;
+}
+
+.custom-file-label {
+    border-radius: 0 0 10px 10px !important;
+}
+
+.custom-file-label::after {
+    border-radius: 0 0 10px 0 !important;
+    height: 100% !important
+}
+
+.invalid-feedback,
+.valid-feedback {
+    background: #F5F5F5;
+    margin: 0;
+    padding-left: 1em;
+}
